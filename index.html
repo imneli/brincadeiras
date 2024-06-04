@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Neutron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Oi more, me perdoa.. ?</h2>
+        <h3>sou cheiroso e engraçado, acho que isso já é um motivo bom tlgkkrs</h3>
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">Sim</button>
+            <button class="btn" onclick="dodge(this)" onmouseover="dodge(this)" style="position: absolute;">Não</button>
+
+        </div>
+
+
+        <a href="https://www.youtube.com/watch?v=k85mRPqvMbE"><img class="crazy" src="https://i.guim.co.uk/img/media/87929f76cb1cbd05350d5a7b8fe759857a2e7e78/388_698_3299_1979/master/3299.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=875b2f73d7fb4832f0b1720a0851af51" alt="" srcset=""></a>
+    </div>
+</body>
+<style>
+    .crazy {
+        margin-top: 100px;
+        width: 300px;
+    }
+
+    h2, h3 {
+        color: #fff;
+        text-shadow: 5px 0px 15px#000;
+    }
+
+    
+
+    #container {
+        background: cornflowerblue;
+        background-image: url(https://i.pinimg.com/736x/bc/de/de/bcdede7df0adc0cfebca6aa3ef9566bc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Poppins';
+    }
+
+    .btn {
+        cursor: pointer;
+        background: rgb(36, 36, 82);
+        color: white;
+        border: none;
+        padding: 20px;
+        width: 80px;
+        border-radius: 5px;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("Agora que você caiu nessa você tera que sair comigo.. caiu na minha armadilha! \nQuando: não sei, vc tem que aceitar ne")
+        // redirect url
+        location.href = "https://music.youtube.com/watch?v=Loa_OSFotDQ&si=NIjE111sMNqwVjGS";
+    }
+
+    function dodge(btn) {
+        // btn declared function
+        btn.style.position = 'absolute';
+        btn.style.bottom = genPosition(10, 90);
+        btn.style.left = genPosition(10, 90);
+        console.log('toma gappp');
+    }
+
+    function genPosition(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+</script>
+
+</html>
